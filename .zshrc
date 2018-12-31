@@ -94,6 +94,9 @@ antigen bundle extract
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle TamCore/autoupdate-zsh-plugin
+
+
+
 #antigen bundle ryanoasis/nerd-fonts
 
 # Load the theme.
@@ -153,3 +156,4 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 #POWERLEVEL9K_MODE='nerdfont-complete'
 #source  ~/powerlevel9k/powerlevel9k.zsh-theme
+export PATH="/usr/local/opt/ruby/bin:$PATH"
