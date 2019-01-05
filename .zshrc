@@ -89,12 +89,13 @@ antigen bundle lein
 antigen bundle command-not-found
 antigen bundle chucknorris
 antigen bundle extract
+antigen bundle colored-man-pages
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle TamCore/autoupdate-zsh-plugin
-
+antigen bundle VundleVim/vundle.vim
 
 
 #antigen bundle ryanoasis/nerd-fonts
@@ -157,3 +158,20 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 #POWERLEVEL9K_MODE='nerdfont-complete'
 #source  ~/powerlevel9k/powerlevel9k.zsh-theme
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+
+# Set a color for iTerm2 tab title background using rgb values
+function title_background_color {
+  echo -ne "\033]6;1;bg;red;brightness;$ITERM2_TITLE_BACKGROUND_RED\a"
+  echo -ne "\033]6;1;bg;green;brightness;$ITERM2_TITLE_BACKGROUND_GREEN\a"
+  echo -ne "\033]6;1;bg;blue;brightness;$ITERM2_TITLE_BACKGROUND_BLUE\a"
+}
+ITERM2_TITLE_BACKGROUND_RED="18"
+ITERM2_TITLE_BACKGROUND_GREEN="26"
+ITERM2_TITLE_BACKGROUND_BLUE="33"
+title_background_color
+# Set iTerm2 tab title text
+function title_text {
+    echo -ne "\033]0;"$*"\007"
+}
+title_text LocoCoyote
