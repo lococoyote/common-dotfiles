@@ -50,8 +50,8 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 # Customise the Powerlevel9k prompts
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir newline status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh vcs dir newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date history os_icon)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 
