@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/scripts
 
 #load Powerlevel9k from Antigen
-POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+#POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 
 source $HOME/antigen.zsh
 
@@ -31,9 +31,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle TamCore/autoupdate-zsh-plugin
 antigen bundle VundleVim/vundle.vim
-antigen theme bhilburn/powerlevel9k powerlevel9k
 
 
+#antigen theme bhilburn/powerlevel9k powerlevel9k
 #antigen bundle ryanoasis/nerd-fonts
 
 
@@ -63,7 +63,7 @@ POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
 
 # Load Nerd Fonts with Powerlevel9k theme for Zsh
 POWERLEVEL9K_MODE='nerdfont-complete'
-#source ~/powerlevel9k/powerlevel9k.zsh-theme
+source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 # Customise the Powerlevel9k prompts
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh vcs dir newline status)
