@@ -47,6 +47,18 @@ antigen apply
 
 # User configuration
 
+#Add WiFi Indicator
+
+zsh_wifi_signal(){
+    local signal=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep CtlRSSI | awk '{print $2}')
+    local color='%F{yellow}'
+    [[ $signal -gt -60 ]] && color='%F{green}'
+    [[ $signal -lt -70 ]] && color='%F{red}'
+    echo -n "%{$color%}\uf424 %{%f%}"
+}
+
+POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
+POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
 
 
 # Load Nerd Fonts with Powerlevel9k theme for Zsh
@@ -55,7 +67,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Customise the Powerlevel9k prompts
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh vcs dir newline status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date history os_icon)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date history custom_wifi_signal os_icon)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_HISTORY_FOREGROUND='228'
 POWERLEVEL9K_HISTORY_BACKGROUND='238'
