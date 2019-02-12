@@ -5,12 +5,16 @@ export LANG="en_US.UTF-8"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/scripts
 
-
+#load Powerlevel9k from Antigen
+POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 
 source $HOME/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
+
+# Load the theme.
+antigen theme robbyrussell
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
@@ -27,12 +31,12 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle TamCore/autoupdate-zsh-plugin
 antigen bundle VundleVim/vundle.vim
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 
 #antigen bundle ryanoasis/nerd-fonts
 
-# Load the theme.
-antigen theme robbyrussell
+
 
 # Tell Antigen that you're done.
 antigen apply
@@ -47,17 +51,12 @@ antigen apply
 
 # Load Nerd Fonts with Powerlevel9k theme for Zsh
 POWERLEVEL9K_MODE='nerdfont-complete'
-source ~/powerlevel9k/powerlevel9k.zsh-theme
+#source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 # Customise the Powerlevel9k prompts
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh vcs dir newline status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date history os_icon)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-
-
-
-
-
 
 
 
