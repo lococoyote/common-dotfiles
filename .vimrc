@@ -1,3 +1,5 @@
+#main configs are in ~/.vim_runtime
+
 set runtimepath+=~/.vim_runtime
 
 source ~/.vim_runtime/vimrcs/basic.vim
