@@ -47,7 +47,7 @@ antigen apply
 
 # User configuration
 
-#Add WiFi Indicator
+#Add WiFi Indicator (mac version)
 
 zsh_wifi_signal(){
     local signal=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep CtlRSSI | awk '{print $2}')
@@ -59,6 +59,21 @@ zsh_wifi_signal(){
 
 POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
 POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
+
+
+#Add WiFi Indicator (linux version)
+
+#zsh_wifi_signal(){
+#   local signal=$(nmcli device wifi | grep yes | awk '{print $8}')
+#  local color='%F{yellow}'
+#    [[ $signal -gt 75 ]] && color='%F{green}'
+#    [[ $signal -lt 50 ]] && color='%F{red}'
+#    echo -n "%{$color%}\uf230  $signal%{%f%}" # \uf230 is 
+#}
+
+#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context time battery dir vcs virtualenv custom_wifi_signal)
+
 
 
 # Load Nerd Fonts with Powerlevel9k theme for Zsh
