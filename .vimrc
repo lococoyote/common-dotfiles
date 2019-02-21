@@ -1,4 +1,4 @@
-#main configs are in ~/.vim_runtime
+# main configs are in ~/.vim_runtime
 
 set runtimepath+=~/.vim_runtime
 
