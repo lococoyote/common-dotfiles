@@ -109,3 +109,9 @@ function title_text {
     echo -ne "\033]0;"$*"\007"
 }
 title_text LocoCoyote
+
+
+#remap ctrl to caps lock (Linux only)
+
+# setxkbmap -layout us -option ctrl:nocaps
+
