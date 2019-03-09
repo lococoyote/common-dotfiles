@@ -57,8 +57,8 @@ zsh_wifi_signal(){
     echo -n "%{$color%}\uf424 %{%f%}"
 }
 
-POWERLEVEL10K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
-POWERLEVEL10K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
+POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
+POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
 
 
 #Add WiFi Indicator (linux version)
@@ -77,19 +77,19 @@ POWERLEVEL10K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
 
 
 # Load Nerd Fonts with Powerlevel9k theme for Zsh
-POWERLEVEL10K_MODE='nerdfont-complete'
-#source ~/powerlevel9k/powerlevel9k.zsh-theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+POWERLEVEL9K_MODE='nerdfont-complete'
+source ~/powerlevel9k/powerlevel9k.zsh-theme
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 
 # Customise the Powerlevel9k prompts
-POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(ssh vcs dir newline status)
-POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(date history custom_wifi_signal os_icon)
-POWERLEVEL10K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL10K_HISTORY_FOREGROUND='228'
-POWERLEVEL10K_HISTORY_BACKGROUND='238'
-POWERLEVEL10K_DATE_FOREGROUND='055'
-POWERLEVEL10K_DATE_BACKGROUND='252'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh vcs dir newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(date history custom_wifi_signal os_icon)
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_HISTORY_FOREGROUND='228'
+POWERLEVEL9K_HISTORY_BACKGROUND='238'
+POWERLEVEL9K_DATE_FOREGROUND='055'
+POWERLEVEL9K_DATE_BACKGROUND='252'
 
 
 
