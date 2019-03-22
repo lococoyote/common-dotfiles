@@ -1,0 +1,35 @@
+2019-03-20 16:21 Slow day today.
+Had one part order for the Stuttgart job and sent instructions to a customer on contacting FedEx for a return disk (a-2578305). There were four service returns/parts reqwests:
+**SiteID 18629  Issue number: a-2770469** ft4400 on 5.3.1.8
+- BIOS is on 2.2.58; needs to be on 2.2.60 minimum
+- BMC is on 2.01; needs to be on 2.10 minimum
+- Disk in 10/40/1 shows repeated MTBF removals (is currently removed). It must be replaced.
+    + Disk part number is 260-01651-000 146 GB SAS
+- No inventory has yet been provided.
+
+
+
+**SiteID 18447 Issue Number: a-2770468** ft4400 on 5.3.1.8
+- BIOS is on 2.2.58; needs to be on 2.2.60 minimum
+- BMC is on 2.01; needs to be on 2.10 minimum
+- System seems to be OK for return to service...pending the firmware upgrade.
+- No inventory has yet been provided.
+
+
+
+
+**SiteID 18445 Issue Number: a-2770467** ft4400 on ?
+- No data has yet been provided for analysis.
+
+
+
+
+
+**SiteID 23757  Issue Number: a-2770483** ft4500 on 6.0.0.6
+- Requested fan unit is: 062-03540-000
+- System only has two disks; both should be 062-03516-000 146 GB SAS
+- Disk serial number 6TB09K4J0000B041HKQR in 11/40/1 does not appear to be a Stratus provided disk. A picture of the disk, top and bottom, should be provided for verification.
+- Without an inventory report, this is my best guess at to the configuration:
+    + 1 x 062-0347-000  enclosure
+    + 1 x 062-03476-000 CPU
+    + 2x 609-01658-000 DIMMs
