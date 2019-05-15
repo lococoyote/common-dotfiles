@@ -140,12 +140,19 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=('status' 'dir' 'vcs')
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('history' 'time' 'os_icon')
 
 
+alias comm='cd /Volumes/OddsNEnds/common_files'
+alias rfile='sshfs loco@192.168.178.84:/run/media/loco/ext/common_files /Volumes/OddsNEnds/common_files'
+alias ciscoc='printf 'duebel\nDec0y87@lden\ny' | /opt/cisco/anyconnect/bin/vpn -s connect https://vpn-emea.stratus.com'
+alias ciscod='/opt/cisco/anyconnect/bin/vpn disconnect'
+
+
 clear
 
 #fortune | cowsay -f tux | lolcat
 
 
 neofetch
+
 
 
 
