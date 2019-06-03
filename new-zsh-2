@@ -47,7 +47,8 @@ antigen apply
 
 # General Settings
 POWERLEVEL9K_MODE='nerdfont-complete'
-source ~/powerlevel9k/powerlevel9k.zsh-theme
+#source ~/powerlevel9k/powerlevel9k.zsh-theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Battery
 POWERLEVEL9K_BATTERY_LOW_BACKGROUND="clear"
@@ -142,7 +143,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('history' 'time' 'os_icon')
 
 alias comm='cd /Volumes/OddsNEnds/common_files'
 alias rfile='sshfs loco@192.168.178.84:/run/media/loco/ext/common_files /Volumes/OddsNEnds/common_files'
-alias ciscoc='printf 'duebel\nDec0y87@lden\ny' | /opt/cisco/anyconnect/bin/vpn -s connect https://vpn-emea.stratus.com'
+alias ciscoc='printf 'duebel\ny3t1_h@z_c0ld_f33T\ny' | /opt/cisco/anyconnect/bin/vpn -s connect https://vpn-emea.stratus.com'
 alias ciscod='/opt/cisco/anyconnect/bin/vpn disconnect'
 
 
