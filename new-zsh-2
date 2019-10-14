@@ -6,9 +6,8 @@ export LANG=en_US.UTF-8
 #export LANG="en_US.UTF-8"
 
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:~/scripts
+#export PATH=$PATH:~/scripts
 
-ZSH_THEME=powerlevel10k/powerlevel10k
 
 source $HOME/antigen.zsh
 
@@ -35,7 +34,6 @@ antigen bundle TamCore/autoupdate-zsh-plugin
 antigen bundle VundleVim/vundle.vim
 
 
-antigen theme romkatv/powerlevel10k
 #antigen theme bhilburn/powerlevel9k powerlevel9k
 #antigen bundle ryanoasis/nerd-fonts
 
@@ -48,9 +46,8 @@ antigen apply
 
 
 # General Settings
-#POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL10K_MODE='nerdfont-complete'
-#source ~/powerlevel9k/powerlevel9k.zsh-theme
+POWERLEVEL9K_MODE='nerdfont-complete'
+source ~/powerlevel9k/powerlevel9k.zsh-theme
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Battery
@@ -162,7 +159,7 @@ clear
 #fortune | cowsay -f tux | lolcat
 
 
-neofetch --size 10%
+neofetch --size 15%
 
 
 
