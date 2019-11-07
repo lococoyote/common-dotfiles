@@ -170,3 +170,4 @@ neofetch --size 15%
 
 
 
+export PATH="/usr/local/sbin:$PATH"
