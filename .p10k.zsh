@@ -932,3 +932,4 @@ clear
 # Run Neofetch
 
 neofetch --ascii "$(fortune | cowsay -W 30)"
+#neofetch --ascii "$(cat ~/groot.txt | cowsay -W 30)"

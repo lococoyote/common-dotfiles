@@ -5,8 +5,13 @@ export LANG=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Adding python3 to path
+export PATH=$PATH:/Users/duebel/Library/Python/3.7/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/duebel/.oh-my-zsh"
+
+export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/opt/openssl/lib:$DYLD_FALLBACK_LIBRARY_PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -136,3 +141,5 @@ source $ZSH/oh-my-zsh.sh
 
 
 
+
+source /Users/duebel/Library/Preferences/org.dystroy.broot/launcher/bash/br
